@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "a6624357-fedb-42e0-b3d5-1782e65b0af4",
+		"name": "blogsCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42877932",
+		"_collection_link": "https://www.postman.com/chat-app-api-1575/workspace/blogs/collection/42877932-a6624357-fedb-42e0-b3d5-1782e65b0af4?action=share&source=collection_link&creator=42877932"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/blogs",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 4,\r\n  \"title\": \"Learning Java Made Easy\",\r\n  \"description\": \"Step-by-step guide for beginners to learn Java programming.\",\r\n  \"category\": \"Education\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/blogs",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/blogs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 4,\r\n  \"title\": \"Learning Java Made Easy\",\r\n  \"description\": \"Step-by-step guide for beginners to learn Java programming.\",\r\n  \"category\": \"Education\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:8080/blogs",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/blogs/id/4",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/blogs/id/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blogs",
+						"id",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/blogs/id/4",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"title\": \"Learning Go Made Easy\",\r\n    \"description\": \"Easily Learn Go withing 1 hr\",\r\n    \"category\": \"Education\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/blogs/id/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blogs",
+						"id",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
